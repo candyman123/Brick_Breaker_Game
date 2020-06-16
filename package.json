@@ -1,0 +1,37 @@
+{
+  "name": "brick_breaker_game",
+  "version": "1.0.0",
+  "description": "using OpenGL This project includes several polygonic bricks at the top of the screen and at the bottom a pixel firing brick is placed and as soon as the pixel is hit on the brick at the top that particular brick gets diminished.Score Board is also maintained in order to see the level. Mouse and keyboard interaction is given for the movement of the brick at the bottom and key 0 is used for the firing the pixel as well as the click of the mouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi-repos/Brick_Breaker_Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi-repos/Brick_Breaker_Game/issues"
+  },
+  "homepage": "https://github.com/abhi-repos/Brick_Breaker_Game#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "semantic-release": "^17.0.8"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release/npm",{"npmPublish":false}],
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
+  }
+}
