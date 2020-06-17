@@ -37,4 +37,3 @@ jobs:
           echo $VERSION
           echo ${{ env.VERSION }}
 
-  ${GITHUB_REF##*/}
