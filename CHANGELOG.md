@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.0.0...v1.1.0) (2020-06-17)
+
+
+### Features
+
+* added support for getting latest tag for docker image ([4a24b62](https://github.com/abhi-repos/Brick_Breaker_Game/commit/4a24b6220e5e25656c80c0ce4f62a4ed0fb5c467))
+
 # 1.0.0 (2020-06-16)
 
 
