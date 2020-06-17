@@ -36,14 +36,7 @@
         }
       ],
       "@semantic-release/changelog",
-      "@semantic-release/git",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "set-version ${nextRelease.version}",
-          "publishCmd": "publish-package"
-        }
-      ]
+      "@semantic-release/git"
     ],
     "branch": "master"
   }
