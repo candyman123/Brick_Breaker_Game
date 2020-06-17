@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Set env
-        run: echo ::set-env name=VERSION::${GITHUB_REF#refs/*/}
+        run: echo ::set-env name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Test
         run: |
           echo $VERSION
