@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.0...v1.1.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* getting tag through new syntax ([3612ba1](https://github.com/abhi-repos/Brick_Breaker_Game/commit/3612ba161afc774d931c55888170a87b830ac588))
+* removed extra ([11b2271](https://github.com/abhi-repos/Brick_Breaker_Game/commit/11b22710771869be155c48ddf7cf18a781955286))
+
 # [1.1.0](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.0.0...v1.1.0) (2020-06-17)
 
 
