@@ -25,21 +25,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npx semantic-release
-          echo ${GITHUB_REF}
-          echo "hki"
+        run:  echo ::set-env name=VERSION::npx semantic-release | grep "Created tag" | awk  '{print $8}'
 
+#| grep "Created tag" | awk  '{print $8}'
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Set env
-        run: echo ::set-env name=VERSION::${GITHUB_REF#refs/tags/}
       - name: Test
         run: |
           echo $VERSION
           echo ${{ env.VERSION }}
-          echo ${GITHUB_REF}
 
 # | grep "Created tag" | awk  '{print $7}'
+#  NPM_TOKEN=dbf67aff-6afe-4c8f-8124-125b5722113f GH_TOKEN=20848856d45efbaf9d27bd3d7837cbe89e8aedfc npx semantic-release --no-ci | grep "Created tag" | awk  '{print $8}'
