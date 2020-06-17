@@ -38,6 +38,3 @@ jobs:
         run: |
           echo $VERSION
           echo ${{ env.VERSION }}
-
-# | grep "Created tag" | awk  '{print $7}'
-#  NPM_TOKEN=dbf67aff-6afe-4c8f-8124-125b5722113f GH_TOKEN=20848856d45efbaf9d27bd3d7837cbe89e8aedfc npx semantic-release --no-ci | grep "Created tag" | awk  '{print $8}'
