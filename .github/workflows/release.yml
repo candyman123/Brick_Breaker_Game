@@ -25,7 +25,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run:  echo ::set-env name=VERSION::npx semantic-release | grep "Created tag" | awk  '{print $8}'
+        run:  |
+          npx semantic-release
+          grep "Created tag"
+          awk  '{print $8}'
 
 #| grep "Created tag" | awk  '{print $8}'
   test:
