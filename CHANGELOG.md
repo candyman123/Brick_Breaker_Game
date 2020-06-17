@@ -3,6 +3,15 @@
 
 ### Bug Fixes
 
+* added check ([c5c41e9](https://github.com/abhi-repos/Brick_Breaker_Game/commit/c5c41e9b322f74e650363745a2eeb1a6c5aac2b2))
+* added comment ([4b6dd63](https://github.com/abhi-repos/Brick_Breaker_Game/commit/4b6dd63eae1d0c934fa411cd20bbcf1c1abcea12))
+* get tag name and version ([b2cf48f](https://github.com/abhi-repos/Brick_Breaker_Game/commit/b2cf48f46ccf1f24d13f6b64c2e5ad9c81355350))
+
+## [1.1.3](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.2...v1.1.3) (2020-06-17)
+
+
+### Bug Fixes
+
 * get tag name and version ([b2cf48f](https://github.com/abhi-repos/Brick_Breaker_Game/commit/b2cf48f46ccf1f24d13f6b64c2e5ad9c81355350))
 
 ## [1.1.2](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.1...v1.1.2) (2020-06-17)
