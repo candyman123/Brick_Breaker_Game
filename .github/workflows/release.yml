@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - master
+
+env:
+  # TODO: Change variable to your image's name.
+  VERSION: v0.0.0
+
 jobs:
   release:
     name: Release
@@ -21,3 +26,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set env
+        run: echo ::set-env name=VERSION::${GITHUB_REF#refs/*/}
+      - name: Test
+        run: |
+          echo $VERSION
+          echo ${{ env.VERSION }}
+
