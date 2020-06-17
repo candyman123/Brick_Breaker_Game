@@ -28,6 +28,7 @@ jobs:
         run: |
           npx semantic-release
           echo ${GITHUB_REF}
+          echo "hekkki"
 
   test:
     runs-on: ubuntu-latest
