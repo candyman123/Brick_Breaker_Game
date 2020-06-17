@@ -36,4 +36,6 @@ jobs:
         run: |
           echo $VERSION
           echo ${{ env.VERSION }}
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
 
