@@ -1,3 +1,11 @@
+## [1.1.12](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.11...v1.1.12) (2020-06-17)
+
+
+### Bug Fixes
+
+* made check made check fial chek ([5dfa9ac](https://github.com/abhi-repos/Brick_Breaker_Game/commit/5dfa9ac8df2df4687bb884963d4ff3144eb09ca7))
+* made check made check fial chk ([0f47c22](https://github.com/abhi-repos/Brick_Breaker_Game/commit/0f47c22ed4e8bb0c2176347873cb8212ed1cd775))
+
 ## [1.1.11](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.10...v1.1.11) (2020-06-17)
 
 
