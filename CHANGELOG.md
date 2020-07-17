@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.14...v1.1.15) (2020-07-17)
+
+
+### Bug Fixes
+
+* removed extea file comment ([8a7fcf7](https://github.com/abhi-repos/Brick_Breaker_Game/commit/8a7fcf7f01d90b1feda4ff98999d86b96ad0b994))
+
 ## [1.1.14](https://github.com/abhi-repos/Brick_Breaker_Game/compare/v1.1.13...v1.1.14) (2020-07-17)
 
 
