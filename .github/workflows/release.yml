@@ -25,7 +25,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: echo ::set-env name=VERSION::$(npx semantic-release | grep "Created tag" | awk  '{print $8}')
+        run: |
+          echo ::set-env name=VERSION::$(npx semantic-release | grep "Created tag" | awk  '{print $8}')
+          echo "THE VERSION IS"
+          echo $VERSION
       - name: Test
         run: echo $VERSION
 # run: echo ::set-env name=GITHUB_SHA_SHORT::$(echo $GITHUB_SHA | cut -c 1-6)
@@ -36,5 +39,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Test
         run: |
+          echo "GEtting version"
           echo $VERSION
           echo ${{ env.VERSION }}
